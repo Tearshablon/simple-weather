@@ -9,15 +9,13 @@ import lombok.ToString;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode
 @ToString
-public class CurrentlyWeather extends BaseWeather {
+@EqualsAndHashCode
+public class BaseWeather {
 
     private Long time;
     private String summary;
     private String icon;
-    private Long nearestStormDistance;
-    private Long nearestStormBearing;
     private Long precipIntensity;
     private Long precipProbability;
     private Double temperature;
